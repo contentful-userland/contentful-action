@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint src/index.ts",
     "package": "ncc build src/index.ts -o dist",
-    "test": "eslint src/index.ts && jest"
+    "test": "eslint src/index.ts && jest",
+    "ncu": "npx npm-check-updates -u"
   },
   "keywords": [
     "GitHub",
@@ -17,19 +18,19 @@
   "author": "GitHub",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.1.1",
-    "@actions/github": "^3.0.0",
-    "chalk": "^4.1.0",
-    "contentful-management": "^6.2.0-beta0",
-    "contentful-migration": "^0.17.1-beta0",
-    "to-semver": "^3.0.0",
-    "tslib": "^2.1.0"
+    "@actions/core": "^1.3.0",
+    "@actions/github": "^5.0.0",
+    "chalk": "^4.1.1",
+    "contentful-management": "^7.22.2",
+    "contentful-migration": "^4.1.17",
+    "to-semver": "^4.0.0",
+    "tslib": "^2.2.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5",
-    "eslint": "^6.3.0",
-    "jest": "^24.9.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.1.5"
+    "@vercel/ncc": "^0.28.5",
+    "eslint": "^7.27.0",
+    "jest": "^27.0.1",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
   }
 }
