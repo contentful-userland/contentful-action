@@ -109,7 +109,7 @@ Please look at the [demo file](.github/workflows/main.yml).
 ```yml
 - name: Contentful Migration
   id: migrate
-  uses: contentful-userland/contentful-migration-automation@v1
+  uses: contentful-userland/contentful-action@v1
   with:
     # delete_feature: true
     # set_alias: true
