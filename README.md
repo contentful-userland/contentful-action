@@ -110,17 +110,16 @@ Please look at the [demo file](.github/workflows/main.yml).
 - name: Contentful Migration
   id: migrate
   uses: contentful-userland/contentful-migration-automation@v1
-  with:
-    # delete_feature: true
-    # set_alias: true
-    # master_pattern: "main-[YY]-[MM]-[DD]-[hh]-[mm]"
-    # feature_pattern: "sandbox-[branch]"
-    # version_field: versionCounter
-    # version_content_type: environmentVersion
-    # migrations_dir: contentful/migrations
-    space_id: ${{ secrets.SPACE_ID }}
-    management_api_key: ${{ secrets.MANAGEMENT_API_KEY }}
-  # env:
+  env:
+    # DELETE_FEATURE: true
+    # SET_ALIAS: true
+    # MASTER_PATTERN: "main-[YY]-[MM]-[DD]-[hh]-[mm]"
+    # FEATURE_PATTERN: "sandbox-[branch]"
+    # VERSION_FIELD: versionCounter
+    # VERSION_CONTENT_TYPE: environmentVersion
+    # MIGRATIONS_DIR: contentful/migrations
+    SPACE_ID: ${{ secrets.SPACE_ID }}
+    MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
     # LOG_LEVEL: verbose
 ```
 
